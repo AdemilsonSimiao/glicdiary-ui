@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    font-family: poppins;
+    width: 99vw;
+    height: 90vh;
+    align-items: center;
+}
+.logo{
+    background-image: url(../assets/tessss1.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #64D2AE;
+    width: 40vw;
+    height: 90vh;
+}
+.login{
+    margin-left: 10%;
+}
+.text-login{
+    display: block;
+    width: 40vw;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+.span-login span{
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.span-login input{
+    background-color: rgba(177, 187, 196, 0.4);
+    width: 40vw;
+    display: block;
+    height: 40px;
+    border: none;
+}
+.span-login button{
+    background-color: rgba(96, 210, 172, 0.5);
+    width: 40vw;
+    margin-top: 30px;
+    height: 40px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: none;
+}
+
+.span-login p{
+    display: block;
+    text-align: center;
+}

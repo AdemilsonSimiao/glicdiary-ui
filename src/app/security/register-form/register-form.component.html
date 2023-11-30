@@ -1,0 +1,48 @@
+{{ msg }}
+
+<div class="container">
+
+  <form autocomplete="off" #f="ngForm">
+    <div class="p-grid p-fluid">
+
+      <div class="p-col-12">
+        <h1>Cadastro</h1>
+      </div>
+
+      <div class="p-col-12">
+        <p><input pInputText type="text" name="name" placeholder="Nome"
+          ngModel required #name>
+        </p>
+      </div>
+
+      <div class="p-col-12">
+        <p><input pInputText type="email" name="user" placeholder="E-mail"
+          ngModel required #user>
+        </p>
+      </div>
+
+      <div class="p-col-12">
+        <p>
+          <input pInputText type="password" name="password" placeholder="Senha"
+          ngModel required #password>
+        </p>
+
+      </div>
+      
+      <div class="p-col-12">
+        <p><input pInputText type="text" name="cpf" placeholder="CPF"
+          ngModel required #cpf>
+        </p>
+      </div>
+
+      <div class="p-col-12">
+        <p><button pButton type="submit" label="Cadastrar" [disabled]="!f.valid"
+          (click)="register(name.value, user.value, password.value, cpf.value)"></button>
+        </p>
+        <a href="login" pButton label="Logar"></a>
+      </div>
+
+    </div>
+  </form>
+
+</div>
